@@ -1,6 +1,6 @@
 def ask_number
-	puts "Salut et bienvenue dans notre superbe pyramide artisanale ! 
-	Combien d'étages voudrais-tu ?"
+	puts "Salut et bienvenue dans notre superbe pyramide-losange artisanale ! 
+	Combien d'étages voudrais-tu ?(Choisis IMPERATIVEMENT un nombre IMPAIR!)"
 	print "> "
 	number = gets.chomp
 
@@ -22,11 +22,11 @@ number.to_i.downto(0) do |i|
 	pyramide << c + a + b
 	end
 	
-	if number.to_i == 1 ; 3 ; 5 ; 7 ; 9 ; 11 ; 13 ; 15 ; 17 ; 19 ; 21 ; 23 ; 25
-		return puts pyramide
+	if number.to_i % 2 == 1
+		puts pyramide
 
-	else number.to_i == 2 ; 4 ; 6 ; 8 ; 10 ; 12 ; 14 ; 16 ; 18 ; 20 ; 22 ; 24
-		return puts "Et ben non !"
+	else number.to_i % 2 == 0
+		puts "Et ben non ! On ferme le jeu. Try again !"
 	end
 
 end

@@ -1,13 +1,12 @@
-def ask_first_name
+def ask_first_name # Déf demandant le prénom de l'user et ouvre champ de saisie
 	puts "Quel est ton prénom ?"
 	print "> "
 	first_name = gets.chomp
-	return first_name
 
 end
 
 def say_hello (first_name)
-	puts "Bonjour, #{first_name}"
+	puts "Bonjour, #{first_name} !"
 	
 end
 	
@@ -17,4 +16,4 @@ def perform
 	
 end
 
-performs
+perform
